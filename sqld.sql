@@ -1,1 +1,1 @@
-select count(deptno) from emp;
+select * from emp;
