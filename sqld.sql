@@ -272,4 +272,24 @@ UNPIVOT = WIDE -> LONG
 - WITH GRANT OPTION, WITH ADMIN OPTION
 WITH GRANT OPTION = 중간관리자가 있음, 중간관리자만 회수가능, 중간관리자 권한 회수시 3자도 회수
 WITH ADMIN OPTION = WITH GRANT OPTION 반대
-이상
+
+1차 정규화 = 중복성 제거
+2차 정규화 = 부분 종속성 제거
+3차 정규화  = 이행 종속성 제거
+ntile = 그룹으로 나누는거
+Lead(대상,순서,디폴트값)
+Truncate table은 모든 행을 삭제
+프로시저와 트리거
+프로시저는 execute로 실행 commit,rollback가능 트리거는 자동실행 commit,rollback 불가
+인덱스는 데이터를 더빨리 찾기위한 목차같은 구조 
+다중행서브쿼리는 연산 in any같은걸 써야된다
+natural join은 식별자를 가질수없다
+rollup은 a,(a,b),전체계산
+cube는 a,b,(a,b),전체계산
+grouping sets은 맘대로 정하는거
+분산데이터는 신뢰성과 가용성이 높다, 병렬처리 가능 그러나 관리와 보안 통제가 어렵고 무결성 관리가 어렵다
+alter는 테이블을 변경하는 명령어 modify는 그중 하나로 컬럼의 타입이나 제약 조건을 변경
+count(1) = count(*) null값도 센다
+Nested Loop join = 한 테이블의 각 행에 대해 다른 테이블 전체를 반복 탐색하면서 조건이 맞는 행을 찾는 방식(적은 데이터 조인할때 유리)
+Hash join = 온라인 트랙잭션 처리에 유용
+unique index scan을 사용하려면 칼럼값을 모두 사용해야함
