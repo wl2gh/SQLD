@@ -289,7 +289,14 @@ cube는 a,b,(a,b),전체계산
 grouping sets은 맘대로 정하는거
 분산데이터는 신뢰성과 가용성이 높다, 병렬처리 가능 그러나 관리와 보안 통제가 어렵고 무결성 관리가 어렵다
 alter는 테이블을 변경하는 명령어 modify는 그중 하나로 컬럼의 타입이나 제약 조건을 변경
-count(1) = count(*) null값도 센다
+count(1) = count(*) null값도 센다, count는 null을 안세서 0으로 출력
 Nested Loop join = 한 테이블의 각 행에 대해 다른 테이블 전체를 반복 탐색하면서 조건이 맞는 행을 찾는 방식(적은 데이터 조인할때 유리)
 Hash join = 온라인 트랙잭션 처리에 유용
 unique index scan을 사용하려면 칼럼값을 모두 사용해야함
+페어링 = 엔티티 안의 인스턴스가 개별적으로 관계를 가지는 것
+트랜잭션 = 두 엔티티의 관계가 서로 필수적일 때 하나의 트랜잭션을 형성
+ORDER BY절에는 GROUP BY에 사용하지 않은 컬럼을 명시할 수 없다
+offset = 건너뜀 ex) offset 2 = 2번 건너뛰고 그행을 읽겠다.
+GROUP BY 절에 명시되지 않은 컬럼은 ORDER BY 절에 사용할 수 없다
+ASC시 null은 제일 마지막에 DESC시 null은 제일 첫번째로 출력
+PIVOT 시 FOR 앞에는 반드시 집계함수(SUM, AVG 등)의 형태여야 한다.
