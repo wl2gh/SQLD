@@ -279,7 +279,6 @@ WITH ADMIN OPTION = WITH GRANT OPTION 반대
 ntile = 그룹으로 나누는거
 Lead(대상,순서,디폴트값)
 Truncate table은 모든 행을 삭제
-프로시저와 트리거
 프로시저는 execute로 실행 commit,rollback가능 트리거는 자동실행 commit,rollback 불가
 인덱스는 데이터를 더빨리 찾기위한 목차같은 구조 
 다중행서브쿼리는 연산 in any같은걸 써야된다
